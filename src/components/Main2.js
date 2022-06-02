@@ -2,7 +2,7 @@ import "../App.css";
 import "./Main2.module.css";
 import React from "react";
 import place from "../api/mock.json";
-
+import { Link } from "react-router-dom";
 // UC_SEQ : 255~354
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -17,11 +17,13 @@ function Main2() {
                 if (item.UC_SEQ === getRandomInt(255, 353)) {
                     return (
                         <span className="image1">
-                            <img
-                                className="image"
-                                src={item.MAIN_IMG_THUMB}
-                                alt="gallery"
-                            />
+                            <Link to="Detail">
+                                <img
+                                    className="image"
+                                    src={item.MAIN_IMG_THUMB}
+                                    alt="gallery"
+                                />
+                            </Link>
                             <span>{item.TITLE}</span>
                         </span>
                     );

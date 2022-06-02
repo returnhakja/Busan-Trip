@@ -10,7 +10,7 @@ function App() {
         <div>
             <Main></Main>
             <Main2></Main2>
-            <DetailPage></DetailPage>
+            {/* <DetailPage></DetailPage> */}
             <Footer></Footer>
         </div>
     );
