@@ -2,7 +2,9 @@ import React from "react";
 import styles from "./Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faSailboat } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faSailboat } from "@fortawesome/free-solid-svg-icons";
+import { faUmbrellaBeach } from "@fortawesome/free-solid-svg-icons";
+import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
     return (
@@ -18,7 +20,7 @@ const Footer = () => {
                 </div>
                 <div className={styles.team_member}>
                     <FontAwesomeIcon
-                        icon={faGithub}
+                        icon={faUmbrellaBeach}
                         size="2x"
                         className={styles.giticon}
                     />
@@ -26,7 +28,7 @@ const Footer = () => {
                 </div>
                 <div className={styles.team_member}>
                     <FontAwesomeIcon
-                        icon={faGithub}
+                        icon={faPlaneDeparture}
                         size="2x"
                         className={styles.giticon}
                     />
@@ -34,7 +36,7 @@ const Footer = () => {
                 </div>
                 <div className={styles.team_member}>
                     <FontAwesomeIcon
-                        icon={faGithub}
+                        icon={faLocationDot}
                         size="2x"
                         className={styles.giticon}
                     />

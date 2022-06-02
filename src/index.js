@@ -12,8 +12,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/Detail" element={<DetailPage></DetailPage>} />
+            <Route path="/" element={<Main />}></Route>
+            <Route
+                path="/detail/:UC_SEQ"
+                element={<DetailPage></DetailPage>}
+            ></Route>
         </Routes>
     </BrowserRouter>
 );
