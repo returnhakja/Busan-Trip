@@ -1,6 +1,6 @@
 .body-wrapper {
-    /* position: relative; */
-    /* display: block; */
+    position: relative;
+    display: block;
     position: static;
     border: 2px dashed salmon;
     display: flex;
@@ -14,14 +14,12 @@
       object-fit: fill;
     } */
 .main-img {
-    clear: both;
-    display: flex;
+    /* clear: both; */
     justify-content: center;
     object-fit: fill;
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    /* height: 100%; */
     /* width: 100vw; */
-    display: block;
 }
 
 /* .container1 {
