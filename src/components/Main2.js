@@ -15,10 +15,11 @@ function Main2() {
     return (
         <div>
             {items.map((item) => {
+                console.log(item);
                 if (item.UC_SEQ === getRandomInt(255, 353)) {
                     return (
                         <span className="image1">
-                            <Link to={`detail/${item.UC_SEQ}`}>
+                            <Link to={`/detail/${item.UC_SEQ}`}>
                                 <img
                                     className="image"
                                     src={item.MAIN_IMG_THUMB}
