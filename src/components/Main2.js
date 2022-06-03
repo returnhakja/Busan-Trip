@@ -3,6 +3,7 @@ import "./Main2.module.css";
 import React from "react";
 import place from "../api/mock.json";
 import { Link } from "react-router-dom";
+import { faChainSlash } from "@fortawesome/free-solid-svg-icons";
 // UC_SEQ : 255~354
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -14,10 +15,11 @@ function Main2() {
     return (
         <div>
             {items.map((item) => {
+                console.log(item);
                 if (item.UC_SEQ === getRandomInt(255, 353)) {
                     return (
                         <span className="image1">
-                            <Link to="Detail">
+                            <Link to={`/detail/${item.UC_SEQ}`}>
                                 <img
                                     className="image"
                                     src={item.MAIN_IMG_THUMB}
