@@ -9,17 +9,34 @@
 }
 
 .contents {
-    width: 96%;
     max-width: 1100px;
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
     margin: 0 auto;
+    margin-top: 2%;
+    /* border: 2px dashed salmon; */
 }
 
 .title {
     font-weight: 600;
     font-size: 20px;
     text-align: center;
+}
+
+/* .team-member:nth-child(2) {
+    margin-right: -20px;
+    text-align: center;
+} */
+.team_member {
+    width: 50px;
+    height: 100px;
+    /* border: 2px dashed salmon; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.giticon {
+    margin: auto;
 }
