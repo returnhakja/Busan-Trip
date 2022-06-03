@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLocationDot, faSailboat } from "@fortawesome/free-solid-svg-icons";
-import { faUmbrellaBeach } from "@fortawesome/free-solid-svg-icons";
-import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
+
+import {
+    faLocationDot,
+    faSailboat,
+    faUmbrellaBeach,
+    faPlaneDeparture,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
     return (

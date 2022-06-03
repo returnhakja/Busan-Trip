@@ -3,8 +3,7 @@ import clear from "../img/clear.png";
 import { Link } from "react-router-dom";
 import place from "../api/mock.json";
 import Footer from "./Footer";
-import Navbar from "./Navbar";
-import { useParams } from "react-router-dom";
+import Navber from "./Navber";
 
 function getRandomInt(min, max) {
     console.log("----------");
@@ -20,7 +19,7 @@ function Main() {
     const items = place.getAttractionKr.item;
     return (
         <div>
-            <Navbar></Navbar>
+            <Navber />
             <div className={styles["body-wrapper"]}>
                 <div className="Main_img">
                     <img
@@ -38,16 +37,16 @@ function Main() {
                                 a === index + 2
                             ) {
                                 return (
-                                    <div className="image1" key={item.UC_SEQ}>
-                                        <Link to={`/detail/${item.UC_SEQ}`}>
+                                    <p className={styles["ListImg"]}>
+                                        <Link to="/detail">
                                             <img
-                                                className="image"
+                                                className={styles["List"]}
                                                 src={item.MAIN_IMG_THUMB}
                                                 alt="gallery"
                                             />
-                                            <p>{item.TITLE}</p>
                                         </Link>
-                                    </div>
+                                        <p>{item.TITLE}</p>
+                                    </p>
                                 );
                             }
                         })}
