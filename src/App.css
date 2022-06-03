@@ -201,3 +201,20 @@ input {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+.IMG_Con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 5%;
+}
+.IMG_list img {
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.IMG_title {
+    text-align: center;
+    /* color: red; */
+}
