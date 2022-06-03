@@ -13,14 +13,14 @@ function Navbar() {
         <>
             <nav className="navbar">
                 {/* <Link to="/" className="navbar-logo"> */}
-                <div>
+                <Link to="/">
                     <img className="mainimg" src={ing} alt="mainImg" />
-                </div>
+                </Link>
 
                 {/* </Link> */}
                 <ul className="nav-items">
                     {navItems.map((item) => {
-                        if (item.title === "전체보기") {
+                        if (item.title === "구별로 보기") {
                             return (
                                 <li
                                     key={item.id}

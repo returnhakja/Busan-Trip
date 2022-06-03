@@ -1,6 +1,6 @@
 import styles from "./Main.module.css";
 import clear from "../img/clear.png";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import place from "../api/mock.json";
 import Footer from "./Footer";
 import Navber from "./Navber";
@@ -14,7 +14,10 @@ function getRandomInt(min, max) {
 }
 
 function Main() {
+    // const params = useParams();
+    // console.log(params.UC_SEQ);
     let a = Math.floor(Math.random() * 100) + 1;
+
     const items = place.getAttractionKr.item;
     return (
         <div>
@@ -36,8 +39,11 @@ function Main() {
                                 a === index + 2
                             ) {
                                 return (
-                                    <p className={styles["ListImg"]}>
-                                        <Link to="/detail">
+                                    <div
+                                        className={styles["ListImg"]}
+                                        key={item.UC_SEQ}
+                                    >
+                                        <Link to={`/detailNu/${item.UC_SEQ}`}>
                                             <img
                                                 className={styles["List"]}
                                                 src={item.MAIN_IMG_THUMB}
@@ -45,7 +51,7 @@ function Main() {
                                             />
                                         </Link>
                                         <p>{item.TITLE}</p>
-                                    </p>
+                                    </div>
                                 );
                             }
                         })}

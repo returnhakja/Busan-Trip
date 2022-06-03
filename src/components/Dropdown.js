@@ -17,13 +17,13 @@ function Dropdown() {
                 {serviceDropdown.map((item) => {
                     return (
                         <li key={item.id}>
-                            <p
-                                to={item.path}
+                            <Link
+                                to={`/detail/${item.title}`}
                                 className={item.cName}
                                 onClick={() => setDropdown(false)}
                             >
                                 {item.title}
-                            </p>
+                            </Link>
                         </li>
                     );
                 })}
