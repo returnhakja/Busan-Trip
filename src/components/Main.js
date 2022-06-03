@@ -1,6 +1,6 @@
 import styles from "./Main.module.css";
 import clear from "../img/clear.png";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import place from "../api/mock.json";
 import Footer from "./Footer";
 import Navber from "./Navber";
@@ -64,5 +64,4 @@ function Main() {
         </div>
     );
 }
-
 export default Main;
