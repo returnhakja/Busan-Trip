@@ -1,7 +1,7 @@
 import Dropdown from "./Dropdown";
 import { useState } from "react";
 
-const Menu_Items = ({ items }) => {
+const MenuItems = ({ items }) => {
     const [dropdown, setDropdown] = useState("false");
     return (
         <li className="menu-items">
@@ -24,4 +24,4 @@ const Menu_Items = ({ items }) => {
     );
 };
 
-export default Menu_Items;
+export default MenuItems;

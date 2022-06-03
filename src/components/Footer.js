@@ -1,32 +1,53 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
+import {
+    faLocationDot,
+    faSailboat,
+    faUmbrellaBeach,
+    faPlaneDeparture,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.contents}>
-                <div>
-                    <FontAwesomeIcon icon={faGithub} size="2x" />
-                    <span>강동현</span>
+                <div className={styles.team_member}>
+                    <FontAwesomeIcon
+                        icon={faSailboat}
+                        size="2x"
+                        className={styles.giticon}
+                    />
+                    <p>강동현</p>
                 </div>
-                <div>
-                    <FontAwesomeIcon icon={faGithub} size="2x" />
-                    <span>곽예영</span>
+                <div className={styles.team_member}>
+                    <FontAwesomeIcon
+                        icon={faUmbrellaBeach}
+                        size="2x"
+                        className={styles.giticon}
+                    />
+                    <p>곽예영</p>
                 </div>
-                <div>
-                    <FontAwesomeIcon icon={faGithub} size="2x" />
-                    <span>김도헌</span>
+                <div className={styles.team_member}>
+                    <FontAwesomeIcon
+                        icon={faPlaneDeparture}
+                        size="2x"
+                        className={styles.giticon}
+                    />
+                    <p>김도헌</p>
                 </div>
-                <div>
-                    <FontAwesomeIcon icon={faGithub} size="2x" />
-                    <span>박정인</span>
+                <div className={styles.team_member}>
+                    <FontAwesomeIcon
+                        icon={faLocationDot}
+                        size="2x"
+                        className={styles.giticon}
+                    />
+                    <p>박정인</p>
                 </div>
             </div>
             <div>
                 <h2 className={styles.title}>
-                    강사님..고생하셨습니다ㅠ
                     <br />
                     Copyright by &copy; 2022 GUSAILSAENG
                 </h2>
