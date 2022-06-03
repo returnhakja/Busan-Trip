@@ -1,15 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import { serviceDropdown } from "./NavItems";
+import { Link } from "react-router-dom";
+import "./Dropdown.css";
 
-const Dropdown = ({ submenus, dropdown }) => {
+function Dropdown() {
+    const [dropdown, setDropdown] = useState(false);
+
     return (
-        <ul className={`dropdown ${dropdown ? "show" : ""}`}>
-            {submenus.map((submenu, index) => (
-                <li key={index} className="menu-items">
-                    <a href="/#">{submenu.title}</a>
-                </li>
-            ))}
-        </ul>
+        <>
+            <ul
+                className={
+                    dropdown ? "services-submenu clicked" : "services-submenu"
+                }
+                onClick={() => setDropdown(!dropdown)}
+            >
+                {serviceDropdown.map((item) => {
+                    return (
+                        <li key={item.id}>
+                            <Link
+                                to={`/detail/${item.title}`}
+                                className={item.cName}
+                                onClick={() => setDropdown(false)}
+                            >
+                                {item.title}
+                            </Link>
+                        </li>
+                    );
+                })}
+            </ul>
+        </>
     );
-};
+}
 
 export default Dropdown;

@@ -4,9 +4,7 @@
     position: static;
     border: 2px dashed salmon;
     text-align: center;
-    margin-top: 30px;
-
-    /* overflow: hidden; */
+    /* margin-top: 30px; */
 }
 
 .div {
@@ -33,6 +31,9 @@
 }
 .img-flex {
     display: flex;
-    background-color: red;
+    background-color: rgb(66, 168, 166);
     justify-content: center;
+}
+.ListImg {
+    margin-right: 50px;
 }

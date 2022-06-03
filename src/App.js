@@ -8,10 +8,10 @@ import Main2 from "./components/Main2";
 function App() {
     return (
         <div>
-            <Main></Main>
-            <Main2></Main2>
+            {/* <Main></Main> */}
+            {/* <Main2></Main2> */}
             {/* <DetailPage></DetailPage> */}
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </div>
     );
 }
