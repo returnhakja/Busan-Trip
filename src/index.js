@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DetailPage from "./components/DetailPage";
 import Main2 from "./components/Main2";
 import Main from "./components/Main";
+import ListPage from "./components/ListPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,6 +15,7 @@ root.render(
         <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/Detail" element={<DetailPage></DetailPage>} />
+            <Route path=":GUGUN_NM" element={<ListPage></ListPage>} />
         </Routes>
     </BrowserRouter>
 );

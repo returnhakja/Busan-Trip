@@ -2,13 +2,14 @@ export const navItems = [
     {
         id: 1,
         title: "Home",
-        path: "./",
+        path: "/",
         cName: "nav-item",
     },
     {
         id: 2,
         title: "전체보기",
         path: "./services",
+        // path: "/listpage",
         cName: "nav-item",
     },
 

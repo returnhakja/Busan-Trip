@@ -35,7 +35,7 @@ function Navbar() {
                         }
                         return (
                             <li key={item.id} className={item.cName}>
-                                <p to={item.path}>{item.title}</p>
+                                <Link to={item.path}> {item.title} </Link>
                             </li>
                         );
                     })}

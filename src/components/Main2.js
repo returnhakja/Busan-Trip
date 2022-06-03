@@ -3,6 +3,7 @@ import "./Main2.module.css";
 import React from "react";
 import place from "../api/mock.json";
 import { Link } from "react-router-dom";
+
 // UC_SEQ : 255~354
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -11,6 +12,7 @@ function getRandomInt(min, max) {
 }
 function Main2() {
     const items = place.getAttractionKr.item;
+
     return (
         <div>
             {items.map((item) => {

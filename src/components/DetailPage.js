@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import Image from "../components/Image";
+import { useParams } from "react-router-dom";
 const DetailContainer = styled.div`
     border: 2px dashed salmon;
 `;
@@ -37,8 +38,10 @@ const Btn = styled.button`
 `;
 
 const DetailInfo = styled.div`
-    /* border: 2px dashed skyblue; */
-    padding: 10px;
+    border: 2px dashed skyblue;
+    border-radius: 50px;
+    background: linear-gradient(to right, skyblue, pink);
+    padding: 50px;
     box-sizing: border-box;
 `;
 const DetailSiteInfo = styled.div`
@@ -59,6 +62,7 @@ const AddBtn = styled.button`
     line-height: 25px;
     margin: auto;
 `;
+
 const travelData = {
     UC_SEQ: 259,
     MAIN_TITLE: "죽성성당",
