@@ -3,6 +3,7 @@ import MenuItems from "./MenuItems";
 import "../App.css";
 import "./Dropdown.css";
 
+
 const Navbar = () => {
     return (
         <nav className="region">
