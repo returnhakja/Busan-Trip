@@ -15,6 +15,7 @@ function getRandomInt(min, max) {
 
 function Main() {
     let a = Math.floor(Math.random() * 100) + 1;
+
     const items = place.getAttractionKr.item;
     return (
         <div>
@@ -36,8 +37,11 @@ function Main() {
                                 a === index + 2
                             ) {
                                 return (
-                                    <p className={styles["ListImg"]}>
-                                        <Link to="/detail">
+                                    <div
+                                        className={styles["ListImg"]}
+                                        key={item.UC_SEQ}
+                                    >
+                                        <Link to={`/detailNu/${item.UC_SEQ}`}>
                                             <img
                                                 className={styles["List"]}
                                                 src={item.MAIN_IMG_THUMB}
@@ -45,7 +49,7 @@ function Main() {
                                             />
                                         </Link>
                                         <p>{item.TITLE}</p>
-                                    </p>
+                                    </div>
                                 );
                             }
                         })}
@@ -58,5 +62,4 @@ function Main() {
         </div>
     );
 }
-
 export default Main;
