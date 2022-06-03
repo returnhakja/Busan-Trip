@@ -7,7 +7,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import Image from "../components/Image";
-
 const DetailContainer = styled.div`
     border: 2px dashed salmon;
 `;
@@ -109,7 +108,7 @@ function DetailPage() {
     const preview = <span>{travelData.ITEMCNTNTS.substring(0, 300)}</span>;
     const rest = <span>{travelData.ITEMCNTNTS.substring(300)}</span>;
 
-    console.log(rest.props.children);
+    // console.log(rest.props.children);
 
     const [printTxt, setPrintTxt] = useState(false);
     const printWholeTxt = () => {
